@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/home/josu3/Escritorio/Login/image">
+    <file>user.png</file>
+  </qresource>
+</RCC>
