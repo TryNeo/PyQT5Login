@@ -1,3 +1,6 @@
+# !/usr/bin/env python
+# -*- coding: utf-8 -*-
+
 import sys
 import mysql.connector
 from PyQt5 import uic
