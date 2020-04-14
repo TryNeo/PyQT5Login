@@ -35,7 +35,7 @@ class Login(QMainWindow):
             QMessageBox.warning(self, "Login", "Fill in the data", QMessageBox.Ok)
         else:
             get_data = (user_name, password)
-            query = "SELECT * FROM usuarios WHERE username = %s and password = %s"
+            query = "SELECT * FROM usuario WHERE username = %s and password = %s"
             self.mysqlcursor.execute(query, get_data)
             validate = self.mysqlcursor.fetchall()
             if validate:
