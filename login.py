@@ -39,8 +39,7 @@ class Login(QMainWindow):
             self.mysqlcursor.execute(query, get_data)
             validate = self.mysqlcursor.fetchall()
             if validate:
-                QMessageBox.about(self, 'Login Successful', 'Correct username and password', QMessageBox.Ok)
-                QMainWindow.destroy()
+                QMessageBox.question(self, 'Login Successful', 'Correct username and password', QMessageBox.Ok)
             else:
                 QMessageBox.warning(self, "Login Incorrect", "Incorrect user or password", QMessageBox.Ok)
 
